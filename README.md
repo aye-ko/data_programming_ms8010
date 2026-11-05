@@ -81,7 +81,7 @@ Key Tasks:
 - Set rules for outliers
 - Identify errors and remove the rows
   
-Limitations of Data:
+**Limitations of Data:**
 
 What are the limits of the analysis? 
 
@@ -94,7 +94,7 @@ Tools: Use Python to clean, organize, and visualize the data.
 Ensure Data Integrity: Keep a backup of the original raw data;
 Work only on copies of the data.
 
-Steps to clean the data:
+**Steps to clean the data:**
 
 -	Remove null spaces
 
@@ -120,7 +120,7 @@ Steps to clean the data:
 
 -	Create outlier_table for rides < 1 minute or > 120 minutes; the user probably forgot to return the bike. Compare which group falls mostly into these tables and hypothesize why.
 
-Verify Data is Clean and Ready to Analyze:
+**Verify Data is Clean and Ready to Analyze:**
 
 -	Check for duplicate rows.
 
@@ -139,11 +139,11 @@ Verify Data is Clean and Ready to Analyze:
 - Check for ride times that are impossibly short or long
 
 
-Document Cleaning Process:
+**Document Cleaning Process:**
 
 Use a Python Notebook to document the whole process and export it in a .py file
 
-Key Task:
+**Key Task:**
 Check the data for errors
 
 **Analyze**
@@ -199,3 +199,17 @@ A description of all data sources.
 
 Data is from Divvy quarterly reports. 
 
+**Instructions to find data**
+
+If using colab:
+
+     from google.colab import drive
+     drive.mount("/content/drive")
+
+     import pandas as pd
+     df = pd.read_parquet("/content/drive/MyDrive/Data Programmming Project Folder/Divvy_clean/divvy_clean_2024_2026.parquet")
+
+if using vs code
+
+     df = pd.read_parquet("data/divvy_clean_2024_2026.parquet")
+	 
